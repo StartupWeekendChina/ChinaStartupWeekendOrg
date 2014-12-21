@@ -1,0 +1,115 @@
+/* Media Queries */
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+	.page{margin:35px;}
+}
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+	div.header-position-fixed {height: 100px;}
+}
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	.page{margin:0 185px;}
+	div.header-position-fixed {height:75px;}
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+/* Type */
+h1, h2, h3, h4, h5, h6 {
+line-height: 1.4;
+}
+h1, h2, h3, h4, .alpha, .beta, .gamma, .delta {
+font-family: "AG Bold",Helvetica,sans-serif;
+color: #262523;
+font-weight: normal;
+}
+
+h1, .alpha {
+font-size: 2.125em;
+}
+
+h2, .beta {
+font-size: 1.875em;
+margin-top: 30px;
+margin-bottom: 10px;
+}
+
+p, li, ul{
+font-size: 1em;
+letter-spacing: 0.09375em;
+line-height: 1.75em;
+}
+
+ul, ol, dl {
+margin-top:15px;
+font-family: inherit;
+line-height: 1.75em;
+list-style-position: outside;
+margin-bottom: 1.25em;
+}
+
+.content ul{
+list-style-position: outside;
+margin-left: 2em;
+font-size: 0.9375rem;
+}
+
+a {
+color: #4ce49b;
+text-decoration: none;
+line-height: inherit;
+}
+
+strong{
+	font-weight: bold;
+}
+
+/* Layout */
+.page{
+	margin-top: 90px;
+}
+#header li {
+display: inline-block;
+}
+#header ul, #header li {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+#header li a {
+color: #ACACAC;
+font-family: "Proxima Nova","AG Book",Helvetica,sans-serif;
+font-size: 0.8125em;
+font-weight: bold;
+transition: color 0.35s;
+-webkit-transition: color 0.35s;
+text-decoration: none;
+margin-right: 25px;
+}
+.header-logo {
+background-image: url(../images/upglobal-logo.png);
+}
+.header-logo {
+display: block;
+float: left;
+width: 135px;
+height: 45px;
+margin-top:15px;
+margin-right: 45px;
+margin-left: 1.5625em;
+background: url(../images/upglobal-logo.png) left center no-repeat;
+background-size: contain;
+}
+
+div.header-position-fixed {position:fixed; top:0px; margin:auto; z-index:100000; width:100%;} 
+div.header-position-fixed {background:#262523;}
+
+img.impact-image {
+	max-width: 600px;
+	width: 100%;
+}
+
+.guidelines-rules li{font-size: 1.2em;}
+
+footer{
+	min-height:300px;
+}

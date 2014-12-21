@@ -1,0 +1,134 @@
+/* `Variables
+--------------------------------------------------------------------------------*/
+
+$header_fonts: $bold-fonts;
+
+
+/* `Main Typography
+--------------------------------------------------------------------------------*/
+body {
+  line-height: 1.231;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headers use a Double-stranded heading hierarchy
+ * We can now style any element with header typography
+ * it doesnâ€™t depend on location or a type of element
+ * http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+ **/
+
+h1, h2, h3, h4, .alpha, .beta, .gamma, .delta {
+  font-family: $header_fonts;
+  color: $header-color;
+  font-weight: normal;
+}
+
+h1, .alpha {
+  font-size: emCalc(50);
+}
+
+h2, .beta {
+  font-size: emCalc(30);
+}
+
+h3, .gamma {
+  font-size: emCalc(20);
+}
+
+h4, .delta {
+  font-size: emCalc(15);
+  color: #000;
+}
+
+h5, .epsilon {
+  font-family: $medium-fonts;
+  font-size: emCalc(13);
+  font-weight: normal;
+}
+
+p, .text-content {
+  font-size: emCalc(13);
+  letter-spacing: emCalc(1.5);
+  line-height: emCalc(28);
+}
+
+@media (max-width: $small-screen){
+  h1, .alpha {
+    font-size: emCalc(30);
+  }
+
+  h2, .beta {
+    font-size: emCalc(18);
+  }
+  
+  h3, .gamma {
+    font-size: emCalc(18);
+  }
+  
+}
+
+/*
+ * Fix <p> tags nested in <hN> tags
+ * Seems like some of the locomotive tags are sticking HTML inside our header. 
+ * This snippet counteracts that issue
+ **/
+
+h1, h2, h3, h4, h5, h6 {
+  p {
+    font-size: 100%;
+    line-height: 1.2125;
+    margin: 0;
+  }
+}
+
+/* `Header Demi
+ * Apply this to h# elements to give them demi weight
+--------------------------------------------------------------------------------*/
+
+.header-demi {
+  font-family: $demi-fonts;
+  font-weight: normal;
+}
+
+.header-medium {
+  font-family: $medium-fonts;
+  font-weight: normal;
+}
+
+/* `Dark Background Typography
+--------------------------------------------------------------------------------*/
+
+.type-dark-background {
+  body {
+    color: #FFF;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 { 
+    color: #FFF;
+  }
+  
+  p,
+  .text-content {
+    color: $off-white;
+  }
+}
+
+/* `Programs
+--------------------------------------------------------------------------------*/
+.programs h1 ,
+.programas h1 ,
+.programmes h1 {
+  font-size: emCalc(32);
+  color: #ffffff;
+}
+
+.programs p, .programs .text-content, .programs h2 ,
+.programas p, .programas .text-content, .programas h2 ,
+.programmes p, .programmes .text-content, .programmes h2 {
+  color: #ffffff;
+}
