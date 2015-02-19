@@ -1,6 +1,7 @@
 /* Media Queries */
 @media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
 	.page{margin:35px;}
+  .footer-content{margin:35px; padding-top:20px;}
 }
 @media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 @media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
@@ -8,6 +9,7 @@
 }
 @media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 	.page{margin:0 185px;}
+  .footer-content{margin:0 185px; padding-top:40px;}
 	div.header-position-fixed {height:75px;}
 }
 @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
@@ -20,7 +22,7 @@ line-height: 1.4;
 h1, h2, h3, h4, .alpha, .beta, .gamma, .delta {
 font-family: "AG Bold",Helvetica,sans-serif;
 color: #262523;
-font-weight: normal;
+font-weight: bold;
 }
 
 h1, .alpha {
@@ -37,7 +39,7 @@ p, li, ul{
 font-size: 1em;
 letter-spacing: 0.09375em;
 line-height: 1.75em;
-margin-bottom: 15px;
+margin-bottom: 5px;
 }
 
 ul, ol, dl {
@@ -46,6 +48,7 @@ font-family: inherit;
 line-height: 1.75em;
 list-style-position: outside;
 margin-bottom: 1.25em;
+margin-left: 30px;
 }
 
 .content ul{
@@ -79,7 +82,7 @@ list-style: none;
 #header li a {
 color: #ACACAC;
 font-family: "Proxima Nova","AG Book",Helvetica,sans-serif;
-font-size: 0.8125em;
+font-size: 1em;
 font-weight: bold;
 transition: color 0.35s;
 -webkit-transition: color 0.35s;
@@ -111,6 +114,171 @@ img.impact-image {
 
 .guidelines-rules li{font-size: 1.2em;}
 
+#front-pic{
+  margin-top:-15px; 
+  max-width: 900px; 
+  width:100%;
+}
+
+
+#topContent {
+margin: 0 auto;
+position: relative;
+}
+#topContent {
+width: 960px;
+height: 500px;
+margin: 0 auto;
+}
+#pic {
+margin-left: -370px;
+background: url("../images/images.png") no-repeat -770px -370px;
+bottom: -140px;
+}
+#pic {
+position: absolute;
+width: 587px;
+height: 441px;
+left: 50%;
+display: block;
+}
+#grass {
+width: 100%;
+height: 50px;
+position: absolute;
+bottom: 0px;
+left: 0px;
+background: url("../images/images.png") repeat-x 0 0;
+}
+
 footer{
 	min-height:300px;
+	background: #33322f url("../images/footer-bg.png") center;
+	color: #FFFFFF;
+}
+#footer {
+	background: #33322f url("../images/footer-bg.png") center;
+	color: #FFFFFF;
+}
+#footer .footer-content {
+  margin-top:25px;
+  padding: 4.6875em 0 4.0625em;
+  padding-top: 40px;
+}
+footer h3{color:white; font-size:1.3em;}
+
+
+/* `Contents
+--------------------------------------------------------------------------------
+ * `Footer sprites
+ * `Programs sprites
+ */
+
+/* `Footer sprites
+--------------------------------------------------------------------------------*/
+.footer-sprite {
+  background-image: url(../images/main/footer-sprites.png);
+  background-size: 120px 20px;
+  background-repeat: no-repeat;
+  display: block;
+  @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    background-image: url(../images/main/footer-sprites-retina.png);
+  }
+  &.facebook-logo {
+    background-position: 0 0;
+    height: 16px;
+    width: 9px;
+  }
+  &.twitter-logo {
+    background-position: -19px 0;
+    height: 16px;
+    width: 18px;
+  }
+  &.google-plus-logo {
+    background-position: -45px 0;
+    height: 16px;
+    width: 16px;
+  }
+  &.icon.location {
+    background-position: -70px 0;
+    height: 18px;
+    width: 13px;
+  }
+  &.icon.email {
+    background-position: -93px 0;
+    height: 12px;
+    width: 19px;
+  }
+}
+
+/* `Programs sprites
+--------------------------------------------------------------------------------*/
+.programs-sprite {
+  background-image: url(../images/programs-sprites.png);
+  background-size: 650px 110px;
+  background-repeat: no-repeat;
+  display: block;
+  @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+    background-image: url(../images/programs-sprites-retina.png);
+  }
+  &.startup-weekend-logo {
+    background-position: 0 0;
+    height: 50px;
+    width: 118px;
+  }
+  &.startup-weekend-logo.focus {
+    background-position: 0 -60px;
+    height: 50px;
+    width: 118px;
+  }
+  &.next-logo {
+    background-position: -121px 0;
+    height: 50px;
+    width: 72px;
+  }
+  &.next-logo.focus {
+    background-position: -121px -60px;
+    height: 50px;
+    width: 72px;
+  }
+  &.nyse-big-startups-logo {
+    background-position: -205px 0;
+    height: 50px;
+    width: 113px;
+  }
+  &.nyse-big-startups-logo.focus {
+    background-position: -205px -60px;
+    height: 50px;
+    width: 113px;
+  }
+  &.startup-digest-logo {
+    background-position: -327px 0;
+    height: 50px;
+    width: 158px;
+  }
+  &.startup-digest-logo.focus {
+    background-position: -327px -60px;
+    height: 50px;
+    width: 158px;
+  }
+  &.startup-america-logo {
+    background-position: -497px 0;
+    height: 50px;
+    width: 129px;
+  }
+  &.startup-america-logo.focus {
+    background-position: -497px -60px;
+    height: 50px;
+    width: 129px;
+  }
+  &.location-icon {
+    background-position: -627px 0;
+    height: 31px;
+    width: 23px;
+  }
+  &.search-icon {
+    background-position: -637px -38px;
+    height: 15px;
+    width: 13px;
+  }
 }

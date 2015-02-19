@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 创业周末和UP在中国
+title: 关于创业周末和UP在中国
 permalink: /about/
 ---
 
@@ -10,6 +10,8 @@ permalink: /about/
 	</h1></center>
 
 <p><center><img src="/images/sw-china-slider.jpg" class="impact-image"></center></p>
+
+<p><a href="/about/">关于创业周末</a> | FAQ | <a href="/organizer/">Become an Organizer</a> | <a href="/organizer/rules/">末规则和要求</a> | SW Facilitators</p>
 
 <h2>关于创业周末 (Startup Weekend ~ SW)</h2>
 
